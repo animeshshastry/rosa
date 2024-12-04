@@ -1,17 +1,13 @@
 <!-- Header block for project --> <hr>
 <div align="center">
-<!--   <img width="292" alt="ROSA_logo_dark_bg@2x" src="https://github.com/user-attachments/assets/7b4a8e64-9a08-4180-806a-5076d3672c05"> -->
-<!--   <img width="213" alt="ROSA_sticker_color@2x" src="https://github.com/user-attachments/assets/5fa3a03e-5ef8-4942-84ac-95acf2f1777d"> -->
-<!--   <img width="426" alt="ROSA_sticker_color@2x" src="https://github.com/user-attachments/assets/98b0a0ed-6b14-420c-83af-9067ab2d2d22"> -->
-<!-- <img src="https://github.com/user-attachments/assets/d7175d5e-63d2-448c-b9d3-59ca0016ef7a"> -->
-<img width="2057" alt="image" src="https://github.com/user-attachments/assets/ddbd3281-79f0-4d29-b0cd-30a5188ad061">
 
-  
+  [//]: # "  [INSERT YOUR LOGO IMAGE HERE (IF APPLICABLE)]"
+  <h1 align="center">ROSA - The ROS Agent 🤖</h1>
 </div>
-<div align="center">
+<pre align="center">
   The ROS Agent (ROSA) is designed to interact with ROS-based<br>robotics systems using natural language queries. 🗣️🤖
-</div>
-<br>
+</pre>
+
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2410.06472v1-b31b1b.svg)](https://arxiv.org/abs/2410.06472v1)

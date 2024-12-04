@@ -63,8 +63,8 @@ def get_llm(streaming: bool = False):
     # )
 
     ollama_llm = ChatOllama(
-        model="qwen2:7b",  # or your preferred model
-        # model="llama3.1:8b",  # or your preferred model
+        # model="qwen2:7b",  # or your preferred model
+        model="llama3.1:8b",  # or your preferred model
         base_url="http://localhost:11434",
         temperature=0,
         num_ctx=8192,  # adjust based on your model's context window

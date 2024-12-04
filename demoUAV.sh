@@ -49,9 +49,9 @@ if ! xset q &>/dev/null; then
 fi
 
 # Build and run the Docker container
-CONTAINER_NAME="rosa-turtlesim-demo"
+CONTAINER_NAME="rosa-uav-demo"
 echo "Building the $CONTAINER_NAME Docker image..."
-docker build --build-arg DEVELOPMENT=$DEVELOPMENT -t $CONTAINER_NAME -f Dockerfile . || { echo "Error: Docker build failed"; exit 1; }
+docker build --build-arg DEVELOPMENT=$DEVELOPMENT -t $CONTAINER_NAME -f DockerfileUAV . || { echo "Error: Docker build failed"; exit 1; }
 
 echo "Running the Docker container..."
 docker run -it --rm --name $CONTAINER_NAME \
@@ -62,6 +62,7 @@ docker run -it --rm --name $CONTAINER_NAME \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v "$PWD/src":/app/src \
     -v "$PWD/tests":/app/tests \
+    -v /dev:/dev \
     --network host \
     --pid host --ipc host \
     $CONTAINER_NAME
